@@ -617,6 +617,13 @@ app.get('/socials/:username', (req, res) => {
                     url: 'https://pastebin.com',
                     cat: 'miscellaneous_mixed_use'
                 }
+            }else if(a.service == 'linkedin'){
+                socialUN[72] = {
+                    service: a.service ,
+                    is_available: a.available,
+                    url: 'https://www.linkedin.com/',
+                    cat: 'miscellaneous_mixed_use'
+                }
             } else{
                 socialUN.push({
                     service: a.service ,
